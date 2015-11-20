@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel tests" parallel="tests" thread-count="2">
+	<test name="Test One">
+		<parameter name="test-name" value="Test One" />
+		<classes>
+			<class name="com.mycompany.TicketServiceTest" />
+			<class name="com.mycompany.TicketServiceReservationTest" />
+			<class name="com.mycompany.TicketServiceTimeoutTest" />
+			<class name="com.mycompany.TicketParellelSuiteTest" />
+		</classes>
+	</test>
+	
+</suite><!-- Suite -->
